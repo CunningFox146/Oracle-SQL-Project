@@ -37,7 +37,6 @@ CREATE OR REPLACE PACKAGE BODY GamesAdminPackage
 IS
     PROCEDURE AddGame(pSupplier Games.SUPPLIER%type, pAuthor Games.AUTHOR%type, pGameType Games.GAME_TYPE%type, pName Games.NAME%type, pCost Games.COST%type) IS
     BEGIN
-        DBMS_OUTPUT.PUT_LINE('TEST');
         INSERT INTO Games(SUPPLIER, AUTHOR, GAME_TYPE, NAME, COST) VALUES (pSupplier, pAuthor, pGameType, pName, pCost);
         EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.put_line(sqlerrm);
     END;

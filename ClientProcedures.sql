@@ -12,3 +12,4 @@ IS
     END;
 END;
 
+commit;
