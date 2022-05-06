@@ -48,3 +48,5 @@ FOR EACH ROW
 BEGIN
     :NEW.Password := Crypto.Encode(:NEW.Password, Crypto.SecretKey);
 END;
+
+commit;

@@ -91,11 +91,22 @@ ALTER TABLE Orders DROP CONSTRAINT OrdersFkGame;
 ALTER TABLE Orders DROP CONSTRAINT OrdersFkClient;
 ALTER TABLE Orders DROP CONSTRAINT OrdersFkStaff;
 
+commit;
+
 DROP TABLE Staff;
-DROP TABLE Positions;;
+DROP TABLE Positions;
 DROP TABLE Clients;
 DROP TABLE Orders;
 DROP TABLE Suppliers;
 DROP TABLE Authors;
 DROP TABLE GameTypes;
 DROP TABLE Games;
+
+DROP SEQUENCE GamesIdSequence;
+DROP SEQUENCE GameTypesIdSequence;
+DROP SEQUENCE AuthorsSequence;
+DROP SEQUENCE SuppliersIdSequence;
+DROP SEQUENCE OrdersIdSequence;
+DROP SEQUENCE ClientsSequence;
+DROP SEQUENCE StaffSequence;
+DROP SEQUENCE PositionSequence;

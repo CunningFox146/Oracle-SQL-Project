@@ -46,10 +46,10 @@ SELECT * FROM SUPPLIERS;
 
 BEGIN
     GamesAdminPackage.AddGame(1, 1, 1, 'Munchkin', 10);
-    GamesAdminPackage.AddGame(2, 2, 5, 'Piggy pack', 15);
-    GamesAdminPackage.AddGame(3, 3, 6, 'Smash or pass', 7);
-    GamesAdminPackage.AddGame(4, 3, 7, 'Emotional damage', 8);
-    GamesAdminPackage.AddGame(2, 4, 8, 'Wowza(TM)', 6);
+    GamesAdminPackage.AddGame(2, 2, 2, 'Piggy pack', 15);
+    GamesAdminPackage.AddGame(3, 3, 3, 'Smash or pass', 7);
+    GamesAdminPackage.AddGame(4, 3, 4, 'Emotional damage', 8);
+    GamesAdminPackage.AddGame(2, 4, 1, 'Wowza(TM)', 6);
 end;
 SELECT * FROM GAMES;
 
@@ -57,4 +57,6 @@ BEGIN
     GamesAdminPackage.AddClient('Pedro', '50 let', '12312312', 'Kek', '1321');
 END;
 
-INSERT INTO Clients (NAME, ADDRESS, PHONE_NUMBER, LOGIN, PASSWORD) values ('Pedro', '50 let', '12312312', 'Kek', '1321');
+SELECT * FROM CLIENTS;
+
+commit;
