@@ -54,6 +54,7 @@ end;
 SELECT * FROM GAMES;
 
 BEGIN
-
-
+    GamesAdminPackage.AddClient('Pedro', '50 let', '12312312', 'Kek', '1321');
 END;
+
+INSERT INTO Clients (NAME, ADDRESS, PHONE_NUMBER, LOGIN, PASSWORD) values ('Pedro', '50 let', '12312312', 'Kek', '1321');
