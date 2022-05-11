@@ -5,6 +5,7 @@
     FUNCTION Decode (p_in_val IN VARCHAR2, p_key IN VARCHAR2) RETURN VARCHAR2;
 END;
 
+-- all passwords get encrypted
 CREATE OR REPLACE PACKAGE BODY Crypto AS
     FUNCTION Encode (p_in_val IN VARCHAR2, p_key IN VARCHAR2)
     RETURN VARCHAR2

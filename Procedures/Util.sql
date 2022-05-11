@@ -1,5 +1,6 @@
 ﻿CREATE OR REPLACE PACKAGE Util
 IS
+    -- For HudeData.sql
     FUNCTION RandomString(length int) RETURN VARCHAR2;
     FUNCTION RandomChar RETURN CHAR;
 

@@ -1,4 +1,5 @@
-﻿CREATE OR REPLACE PACKAGE GamesAdminPackage
+﻿-- these procedures can only be executed on admin side
+CREATE OR REPLACE PACKAGE GamesAdminPackage
 IS
     PROCEDURE AddGame(pSupplier Games.SUPPLIER%type, pAuthor Games.AUTHOR%type, pGameType Games.GAME_TYPE%type, pName Games.NAME%type, pCost Games.COST%type);
     PROCEDURE RemoveGame(pId Games.ID%type);
